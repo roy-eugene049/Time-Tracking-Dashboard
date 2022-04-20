@@ -1,0 +1,41 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+// global reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// color variables
+$bg-dark: #0e1323;
+$card-dark: #1c204b;
+$card-light: #5747ea;
+$card-hover: #33397a;
+$card-orange: #ff8b64;
+$card-blue: #55c2e6;
+$card-pink: #ff5e7d;
+$card-green: #4bcf82;
+$card-purple: #7335d2;
+$card-yellow: #f1c75b;
+$white: #fff;
+$text-light: #bbc0ff;
+$text-dark: #7078c9;
+
+//mixins
+@mixin bg-img {
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: $bg-dark;
+  color: $white;
+  font-family: 'Rubik', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
